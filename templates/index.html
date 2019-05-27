@@ -1,558 +1,356 @@
 {% extends 'base.html' %}
-{% block content %}
 {% load staticfiles %}
-
-
-	<!-- Header -->
-	<header id="home">
-		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('{% static "img/background1.jpg" %}');">
-			<div class="overlay"></div>
-		</div>
-		<!-- /Background Image -->
-
-		<!-- Nav -->
-		<nav id="nav" class="navbar nav-transparent">
-			<div class="container">
-
-				<div class="navbar-header">
-					<!-- Logo -->
-					<div class="navbar-brand">
-						<a href="index.html">
-							<img class="logo" src="img/logo.png" alt="logo">
-							<img class="logo-alt" src="img/logo-alt.png" alt="logo">
-						</a>
-					</div>
-					<!-- /Logo -->
-
-					<!-- Collapse nav button -->
-					<div class="nav-collapse">
-						<span></span>
-					</div>
-					<!-- /Collapse nav button -->
-				</div>
-
-				<!--  Main navigation  -->
-				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="#home">Главная</a></li>
-					<li><a href="#about">Про нас</a></li>
-					<li><a href="#pricing">Каталог</a></li>
-					<li class="has-dropdown"><a href="#blog">Блог</a>
-						<ul class="dropdown">
-							<li><a href="blog-single.html">blog post</a></li>
-						</ul>
-					</li>
-                    <li><a href="#team">Партнеры</a></li>
-					<li><a href="#contact">Контакты</a></li>
-				</ul>
-				<!-- /Main navigation -->
-
-			</div>
-		</nav>
-		<!-- /Nav -->
-
-		<!-- home wrapper -->
-		<div class="home-wrapper">
-			<div class="container">
-				<div class="row">
-
-					<!-- home content -->
-					<div class="col-md-10 col-md-offset-1">
-						<div class="home-content">
-							<h1 class="white-text">дадим болт каждому</h1>
-							<p class="white-text">А так же саморез, шуруп, гвоздь. И сверлышко подберем
-							</p>
-							<button class="white-btn">Заберу все!</button>
-							<button class="main-btn">Что есть еще?</button>
-						</div>
-					</div>
-					<!-- /home content -->
-
-				</div>
-			</div>
-		</div>
-		<!-- /home wrapper -->
-
-	</header>
-	<!-- /Header -->
-
-	<!-- About -->
-
-	<div id="about" class="section md-padding">
-
-	    <!-- Container -->
-
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<!-- Section header -->
-				<div class="section-header text-center">
-					<h2 class="title">МЫ ГАРАТНИРУЕМ ЧТО ВЫ У НАС НАЙДЕТЕ:</h2>
-				</div>
-				<!-- /Section header -->
-
-				<!-- about -->
-				<div class="col-md-4">
-					<div class="about">
-						<i class="fa fa-shopping-cart"></i>
-						<h3>Огромный ассортимент</h3>
-						<p>От крупнейших производителей и поставщиков Украины</p>
-						<a href="#">Читать дальше</a>
-					</div>
-				</div>
-				<!-- /about -->
-
-				<!-- about -->
-				<div class="col-md-4">
-					<div class="about">
-						<i class="fa fa-thumbs-o-up"></i>
-						<h3>Отличное качество! </h3>
-						<p>Только проверенная временем, сертифицированная продукция. </p>
-						<a href="#">Читать дальше</a>
-					</div>
-				</div>
-				<!-- /about -->
-
-				<!-- about -->
-				<div class="col-md-4">
-					<div class="about">
-						<i class="fa fa-mobile"></i>
-						<h4>Быстрое оформление заказа</h4>
-						<p>Профессиональная консультация, квалифицированный подбор материалов</p>
-						<a href="#">Читать дальше</a>
-					</div>
-				</div>
-				<!-- /about -->
-
-			</div>
-			<!-- /Row -->
-
-		</div>
-		<!-- /Container -->
-	</div>
-
-
-	<!-- Why Choose Us -->
-	<div id="features" class="section md-padding bg-grey">
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<!-- why choose us content -->
-				<div class="col-md-6">
-					<div class="section-header">
-						<h2 class="title">ПОЧЕМУ ВЫБИРАЮТ НАС?</h2>
-					</div>
-					<p>Благодаря опыту и знаниям сотрудников нашей компании и большим охватом производственный мощностей мы можем удовлетворить любую прихоть, если она касается приобретения метизной продукции</p>
-					<div class="feature">
-						<i class="fa fa-check"></i>
-						<p>Цены от производителя</p>
-					</div>
-					<div class="feature">
-						<i class="fa fa-check"></i>
-						<p>Быстрая и удобная логистика</p>
-					</div>
-					<div class="feature">
-						<i class="fa fa-check"></i>
-						<p>Качество продукции и фасовки</p>
-					</div>
-					<div class="feature">
-						<i class="fa fa-check"></i>
-						<p>Индивидуальные решения для крупных заказчиков</p>
-					</div>
-				</div>
-				<!-- /why choose us content -->
-
-				<!-- About slider -->
-				<div class="col-md-6">
-					<div id="about-slider" class="owl-carousel owl-theme">
-						<img class="img-responsive" src="{% static "img/about1.jpg" %}" alt="">
-						<img class="img-responsive" src="{% static "img/about2.jpg" %}" alt="">
-						<img class="img-responsive" src="{% static "img/about3.jpg" %}" alt="">
-						<img class="img-responsive" src="{% static "img/about4.jpg" %}" alt="">
-					</div>
-				</div>
-				<!-- /About slider -->
-
-			</div>
-			<!-- /Row -->
-
-		</div>
-		<!-- /Container -->
-
-	</div>
-	<!-- /Why Choose Us -->
-
-
-	<!-- Numbers -->
-	<div id="numbers" class="section sm-padding">
-
-		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('{% static "img/background2.jpg" %}');">
-			<div class="overlay"></div>
-		</div>
-		<!-- /Background Image -->
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<!-- number -->
-				<div class="col-sm-3 col-xs-6">
-					<div class="number">
-						<i class="fa fa-users"></i>
-						<h3 class="white-text"><span class="counter">1274</span></h3>
-						<span class="white-text">Сделок в 2018 год</span>
-					</div>
-				</div>
-				<!-- /number -->
-
-				<!-- number -->
-				<div class="col-sm-3 col-xs-6">
-					<div class="number">
-						<i class="fa fa-industry"></i>
-						<h3 class="white-text"><span class="counter">12</span></h3>
-						<span class="white-text">Заводов и производителей</span>
-					</div>
-				</div>
-				<!-- /number -->
-
-				<!-- number -->
-				<div class="col-sm-3 col-xs-6">
-					<div class="number">
-						<i class="fa fa-signal"></i>
-						<h3 class="white-text"><span class="counter">~30000</span></h3>
-						<span class="white-text">Наименований товаров</span>
-					</div>
-				</div>
-				<!-- /number -->
-
-				<!-- number -->
-				<div class="col-sm-3 col-xs-6">
-					<div class="number">
-						<i class="fa fa-sitemap"></i>
-						<h3 class="white-text"><span class="counter">45</span></h3>
-						<span class="white-text">Представителей и партнеров</span>
-					</div>
-				</div>
-				<!-- /number -->
-
-			</div>
-			<!-- /Row -->
-
-		</div>
-		<!-- /Container -->
-
-	</div>
-	<!-- /Numbers -->
-
-
-
-
-
-
-	<!-- Team -->
-	<div id="team" class="section md-padding">
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<!-- Section header -->
-				<div class="section-header text-center">
-					<h2 class="title">Our Team</h2>
-				</div>
-				<!-- /Section header -->
-
-				<!-- team -->
-				<div class="col-sm-4">
-					<div class="team">
-						<div class="team-img">
-							<img class="img-responsive" src="{% static "img/team1.jpg" %}" alt="">
-							<div class="overlay">
-								<div class="team-social">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-google-plus"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="team-content">
-							<h3>Владимирович</h3>
-							<span>Генеральный директор</span>
-						</div>
-					</div>
-				</div>
-				<!-- /team -->
-
-				<!-- team -->
-				<div class="col-sm-4">
-					<div class="team">
-						<div class="team-img">
-							<img class="img-responsive" src="{% static "img/team2.jpg" %}" alt="">
-							<div class="overlay">
-								<div class="team-social">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-google-plus"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="team-content">
-							<h3>Анатолиевич</h3>
-							<span>Финансовый директор</span>
-						</div>
-					</div>
-				</div>
-				<!-- /team -->
-
-				<!-- team -->
-				<div class="col-sm-4">
-					<div class="team">
-						<div class="team-img">
-							<img class="img-responsive" src="{% static "img/team3.jpg" %}" alt="">
-							<div class="overlay">
-								<div class="team-social">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-google-plus"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="team-content">
-							<h3>Владимирович</h3>
-							<span>Отдел закупок</span>
-						</div>
-					</div>
-				</div>
-				<!-- /team -->
-
-			</div>
-			<!-- /Row -->
-
-		</div>
-		<!-- /Container -->
-
-	</div>
-	<!-- /Team -->
-
-	<!-- Blog -->
-	<div id="blog" class="section md-padding bg-grey">
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<!-- Section header -->
-				<div class="section-header text-center">
-					<h2 class="title">Recents news</h2>
-				</div>
-				<!-- /Section header -->
-
-				<!-- blog -->
-				<div class="col-md-4">
-					<div class="blog">
-						<div class="blog-img">
-							<img class="img-responsive" src="./img/blog1.jpg" alt="">
-						</div>
-						<div class="blog-content">
-							<ul class="blog-meta">
-								<li><i class="fa fa-user"></i>John doe</li>
-								<li><i class="fa fa-clock-o"></i>18 Oct</li>
-								<li><i class="fa fa-comments"></i>57</li>
-							</ul>
-							<h3>Molestie at elementum eu facilisis sed odio</h3>
-							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-							<a href="blog-single.html">Read more</a>
-						</div>
-					</div>
-				</div>
-				<!-- /blog -->
-
-				<!-- blog -->
-				<div class="col-md-4">
-					<div class="blog">
-						<div class="blog-img">
-							<img class="img-responsive" src="./img/blog2.jpg" alt="">
-						</div>
-						<div class="blog-content">
-							<ul class="blog-meta">
-								<li><i class="fa fa-user"></i>John doe</li>
-								<li><i class="fa fa-clock-o"></i>18 Oct</li>
-								<li><i class="fa fa-comments"></i>57</li>
-							</ul>
-							<h3>Molestie at elementum eu facilisis sed odio</h3>
-							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-							<a href="blog-single.html">Read more</a>
-						</div>
-					</div>
-				</div>
-				<!-- /blog -->
-
-				<!-- blog -->
-				<div class="col-md-4">
-					<div class="blog">
-						<div class="blog-img">
-							<img class="img-responsive"  src="./img/blog3.jpg" alt="">
-						</div>
-						<div class="blog-content">
-							<ul class="blog-meta">
-								<li><i class="fa fa-user"></i>John doe</li>
-								<li><i class="fa fa-clock-o"></i>18 Oct</li>
-								<li><i class="fa fa-comments"></i>57</li>
-							</ul>
-							<h3>Molestie at elementum eu facilisis sed odio</h3>
-							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-							<a href="blog-single.html">Read more</a>
-						</div>
-					</div>
-				</div>
-				<!-- /blog -->
-
-			</div>
-			<!-- /Row -->
-
-		</div>
-		<!-- /Container -->
-
-	</div>
-	<!-- /Blog -->
-
-	<!-- Contact -->
-	<div id="contact" class="section md-padding">
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<!-- Section-header -->
-				<div class="section-header text-center">
-					<h2 class="title">Get in touch</h2>
-				</div>
-				<!-- /Section-header -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<i class="fa fa-phone"></i>
-						<h3>Phone</h3>
-						<p>512-421-3940</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<i class="fa fa-envelope"></i>
-						<h3>Email</h3>
-						<p>email@support.com</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<i class="fa fa-map-marker"></i>
-						<h3>Address</h3>
-						<p>1739 Bubby Drive</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				<!-- contact form -->
-				<div class="col-md-8 col-md-offset-2">
-					<form class="contact-form">
-						<input type="text" class="input" placeholder="Name">
-						<input type="email" class="input" placeholder="Email">
-						<input type="text" class="input" placeholder="Subject">
-						<textarea class="input" placeholder="Message"></textarea>
-						<button class="main-btn">Send message</button>
-					</form>
-				</div>
-				<!-- /contact form -->
-
-			</div>
-			<!-- /Row -->
-
-		</div>
-		<!-- /Container -->
-
-	</div>
-	<!-- /Contact -->
-
-
-	<!-- Footer -->
-	<footer id="footer" class="sm-padding bg-dark">
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<div class="col-md-12">
-
-					<!-- footer logo -->
-					<div class="footer-logo">
-						<a href="index.html"><img src="img/logo-alt.png" alt="logo"></a>
-					</div>
-					<!-- /footer logo -->
-
-					<!-- footer follow -->
-					<ul class="footer-follow">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-					</ul>
-					<!-- /footer follow -->
-
-					<!-- footer copyright -->
-					<div class="footer-copyright">
-						<p>Copyright © 2017. All Rights Reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-					</div>
-					<!-- /footer copyright -->
-
-				</div>
-
-			</div>
-			<!-- /Row -->
-
-		</div>
-		<!-- /Container -->
-
-	</footer>
-	<!-- /Footer -->
-
-	<!-- Back to top -->
-	<div id="back-to-top"></div>
-	<!-- /Back to top -->
-
-	<!-- Preloader -->
-	<div id="preloader">
-		<div class="preloader">
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</div>
+{% block content %}
+        <!-- Header -->
+        <header id="home">
+            <!-- Background Image -->
+            <div class="bg-img" style="background-image: url('{% static "img/background1.jpg" %}');">
+                <div class="overlay"></div>
+            </div>
+            <!-- /Background Image -->
+
+            <!-- Nav -->
+            <nav id="nav" class="navbar nav-transparent">
+                <div class="container">
+
+                    <div class="navbar-header">
+                        <!-- Logo -->
+                        <div class="navbar-brand">
+                            <a href="index.html">
+                                <img class="logo" src="img/logo.png" alt="logo">
+                                <img class="logo-alt" src="img/logo-alt.png" alt="logo">
+                            </a>
+                        </div>
+                        <!-- /Logo -->
+
+                        <!-- Collapse nav button -->
+                        <div class="nav-collapse">
+                            <span></span>
+                        </div>
+                        <!-- /Collapse nav button -->
+                    </div>
+
+                    <!--  Main navigation  -->
+                    <ul class="main-nav nav navbar-nav navbar-right">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#about">Про нас</a></li>
+                        <li><a href="#pricing">Каталог</a></li>
+                        <li class="has-dropdown"><a href="#blog">Блог</a>
+                            <ul class="dropdown">
+                                <li><a href="blog-single.html">blog post</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#team">Партнеры</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                    <!-- /Main navigation -->
+
+                </div>
+            </nav>
+            <!-- /Nav -->
+
+            <!-- home wrapper -->
+            <div class="home-wrapper">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- home content -->
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="home-content">
+                                <h1 class="white-text">дадим болт каждому</h1>
+                                <p class="white-text">А так же саморез, шуруп, гвоздь. И сверлышко подберем
+                                </p>
+                                <button class="white-btn">Заберу все!</button>
+                                <button class="main-btn">Что есть еще?</button>
+                            </div>
+                        </div>
+                        <!-- /home content -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- /home wrapper -->
+
+        </header>
+        <!-- /Header -->
+
+        <!-- About -->
+
+        <div id="about" class="section md-padding">
+
+            <!-- Container -->
+
+            <div class="container">
+
+                <!-- Row -->
+                <div class="row">
+
+                    <!-- Section header -->
+                    <div class="section-header text-center">
+                        <h2 class="title">МЫ ГАРАТНИРУЕМ ЧТО ВЫ У НАС НАЙДЕТЕ:</h2>
+                    </div>
+                    <!-- /Section header -->
+
+                    <!-- about -->
+                    <div class="col-md-4">
+                        <div class="about">
+                            <i class="fa fa-shopping-cart"></i>
+                            <h3>Огромный ассортимент</h3>
+                            <p>От крупнейших производителей и поставщиков Украины</p>
+                            <a href="#">Читать дальше</a>
+                        </div>
+                    </div>
+                    <!-- /about -->
+
+                    <!-- about -->
+                    <div class="col-md-4">
+                        <div class="about">
+                            <i class="fa fa-thumbs-o-up"></i>
+                            <h3>Отличное качество! </h3>
+                            <p>Только проверенная временем, сертифицированная продукция. </p>
+                            <a href="#">Читать дальше</a>
+                        </div>
+                    </div>
+                    <!-- /about -->
+
+                    <!-- about -->
+                    <div class="col-md-4">
+                        <div class="about">
+                            <i class="fa fa-mobile"></i>
+                            <h4>Быстрое оформление заказа</h4>
+                            <p>Профессиональная консультация, квалифицированный подбор материалов</p>
+                            <a href="#">Читать дальше</a>
+                        </div>
+                    </div>
+                    <!-- /about -->
+
+                </div>
+                <!-- /Row -->
+
+            </div>
+            <!-- /Container -->
+        </div>
+
+
+        <!-- Why Choose Us -->
+        <div id="features" class="section md-padding bg-grey">
+
+            <!-- Container -->
+            <div class="container">
+
+                <!-- Row -->
+                <div class="row">
+
+                    <!-- why choose us content -->
+                    <div class="col-md-6">
+                        <div class="section-header">
+                            <h2 class="title">ПОЧЕМУ ВЫБИРАЮТ НАС?</h2>
+                        </div>
+                        <p>Благодаря опыту и знаниям сотрудников нашей компании и большим охватом производственный мощностей мы можем удовлетворить любую прихоть, если она касается приобретения метизной продукции</p>
+                        <div class="feature">
+                            <i class="fa fa-check"></i>
+                            <p>Цены от производителя</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fa fa-check"></i>
+                            <p>Быстрая и удобная логистика</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fa fa-check"></i>
+                            <p>Качество продукции и фасовки</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fa fa-check"></i>
+                            <p>Индивидуальные решения для крупных заказчиков</p>
+                        </div>
+                    </div>
+                    <!-- /why choose us content -->
+
+                    <!-- About slider -->
+                    <div class="col-md-6">
+                        <div id="about-slider" class="owl-carousel owl-theme">
+                            <img class="img-responsive" src="{% static "img/about1.jpg" %}" alt="">
+                            <img class="img-responsive" src="{% static "img/about2.jpg" %}" alt="">
+                            <img class="img-responsive" src="{% static "img/about3.jpg" %}" alt="">
+                            <img class="img-responsive" src="{% static "img/about4.jpg" %}" alt="">
+                        </div>
+                    </div>
+                    <!-- /About slider -->
+
+                </div>
+                <!-- /Row -->
+
+            </div>
+            <!-- /Container -->
+
+        </div>
+        <!-- /Why Choose Us -->
+
+
+        <!-- Numbers -->
+        <div id="numbers" class="section sm-padding">
+
+            <!-- Background Image -->
+            <div class="bg-img" style="background-image: url('{% static "img/background2.jpg" %}');">
+                <div class="overlay"></div>
+            </div>
+            <!-- /Background Image -->
+
+            <!-- Container -->
+            <div class="container">
+
+                <!-- Row -->
+                <div class="row">
+
+                    <!-- number -->
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="number">
+                            <i class="fa fa-users"></i>
+                            <h3 class="white-text"><span class="counter">1274</span></h3>
+                            <span class="white-text">Сделок в 2018 год</span>
+                        </div>
+                    </div>
+                    <!-- /number -->
+
+                    <!-- number -->
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="number">
+                            <i class="fa fa-industry"></i>
+                            <h3 class="white-text"><span class="counter">12</span></h3>
+                            <span class="white-text">Заводов и производителей</span>
+                        </div>
+                    </div>
+                    <!-- /number -->
+
+                    <!-- number -->
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="number">
+                            <i class="fa fa-signal"></i>
+                            <h3 class="white-text"><span class="counter">~30000</span></h3>
+                            <span class="white-text">Наименований товаров</span>
+                        </div>
+                    </div>
+                    <!-- /number -->
+
+                    <!-- number -->
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="number">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 class="white-text"><span class="counter">45</span></h3>
+                            <span class="white-text">Представителей и партнеров</span>
+                        </div>
+                    </div>
+                    <!-- /number -->
+
+                </div>
+                <!-- /Row -->
+
+            </div>
+            <!-- /Container -->
+
+        </div>
+        <!-- /Numbers -->
+
+
+
+
+
+
+        <!-- Team -->
+        <div id="team" class="section md-padding">
+
+            <!-- Container -->
+            <div class="container">
+
+                <!-- Row -->
+                <div class="row">
+
+                    <!-- Section header -->
+                    <div class="section-header text-center">
+                        <h2 class="title">Our Team</h2>
+                    </div>
+                    <!-- /Section header -->
+
+                    <!-- team -->
+                    <div class="col-sm-4">
+                        <div class="team">
+                            <div class="team-img">
+                                <img class="img-responsive" src="{% static "img/team1.jpg" %}" alt="">
+                                <div class="overlay">
+                                    <div class="team-social">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-content">
+                                <h3>Владимирович</h3>
+                                <span>Генеральный директор</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /team -->
+
+                    <!-- team -->
+                    <div class="col-sm-4">
+                        <div class="team">
+                            <div class="team-img">
+                                <img class="img-responsive" src="{% static "img/team2.jpg" %}" alt="">
+                                <div class="overlay">
+                                    <div class="team-social">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-content">
+                                <h3>Анатолиевич</h3>
+                                <span>Финансовый директор</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /team -->
+
+                    <!-- team -->
+                    <div class="col-sm-4">
+                        <div class="team">
+                            <div class="team-img">
+                                <img class="img-responsive" src="{% static "img/team3.jpg" %}" alt="">
+                                <div class="overlay">
+                                    <div class="team-social">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-content">
+                                <h3>Владимирович</h3>
+                                <span>Отдел закупок</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /team -->
+
+                </div>
+                <!-- /Row -->
+
+            </div>
+            <!-- /Container -->
+
+        </div>
+        <!-- /Team -->
+    {% block blog %}
+        {% include "blog_index.html" %}
+    {% endblock %}
+
+    {% block footer %}
+        {% include "footer_index.html" %}
+    {% endblock %}
 
 {% endblock %}
+
+
+
